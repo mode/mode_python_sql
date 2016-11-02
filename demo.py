@@ -22,7 +22,6 @@ def get_mode_results():
 		parser = argparse.ArgumentParser()
 		parser.add_argument('-org', '--org')
 		parser.add_argument('-reporttoken', '--reporttoken')
-		parser.add_argument('-querytoken', '--querytoken')
 		args = parser.parse_args()
 
 	mode_url = 'https://modeanalytics.com'
