@@ -1,0 +1,12 @@
+Token,SQL Query
+d832cd041c7a,"SELECT
+  *
+FROM
+  benn.nfl_touchdowns "
+790de3c8b5ad,"SELECT
+  team,
+  COUNT(touchdown_id) AS total_touchdowns
+FROM
+  benn.nfl_touchdowns 
+GROUP BY 1
+ORDER BY 2 DESC"
