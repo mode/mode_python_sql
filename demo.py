@@ -1,14 +1,14 @@
 
-import json, requests, datetime, ConfigParser, argparse, sys, csv
+import json, requests, datetime, ConfigParser, argparse, sys, csv, yaml
 from requests.auth import HTTPBasicAuth
 
 
 def get_auth(whichAuth):
-	file = 'python.properties'
-	config = ConfigParser.RawConfigParser()
-	config.read(file)
-	token = config.get('ModeSection', 'token')
-	password = config.get('ModeSection', 'password')
+	with open ('mode.yml', 'r') as f:
+		mode = yaml.load(f) 
+
+	token = mode["mode"]["token"]
+	password = mode["mode"]["password"]
 	auth = (token, password)
 	return auth
 

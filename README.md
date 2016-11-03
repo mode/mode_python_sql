@@ -5,7 +5,7 @@ This script allows users to download a CSV of raw SQL from queries in a report.
 # Steps to use this script:
 
 1.  In Mode, generate API token (under Settings -> Your Name -> API Tokens).
-2.  Add the token and password values to the python.properties file.
+2.  Add the token and password values to the mode.yml file.
 3.  Run this script using: 
     `python demo.py -org={{organization_username}} -reporttoken={{report_token}}`
 
