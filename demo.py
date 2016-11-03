@@ -55,7 +55,7 @@ def get_mode_results():
 	for x in query_runs:
 		token = x['query_token']
 		raw = x['raw_source']
-		#print "Query Token: " + token
+		print "Query Token: " + token
 		print raw
 		print "*************************************"
 		writer.writerow([token, raw])
