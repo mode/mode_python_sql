@@ -1,4 +1,4 @@
-# mode_results_python
+# mode_python_sql
 This script allows users to download a CSV of raw SQL from queries in a report.
 
 
